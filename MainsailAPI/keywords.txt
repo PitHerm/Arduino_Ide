@@ -1,0 +1,25 @@
+#######################################
+# Syntax Coloring Map For MainsailAPI
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+MainsailAPI	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+getDlp	KEYWORD2
+sendRequestToMainsail	KEYWORD2
+sendGetToMainsail	KEYWORD2
+init	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
