@@ -1,0 +1,56 @@
+#######################################
+# Syntax Coloring Map For OctoPrintAPI
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+OctoprintApiExt	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+getDlp	KEYWORD2
+sendRequestToOctoprint	KEYWORD2
+sendGetToOctoprint	KEYWORD2
+getPrinterStatistics	KEYWORD2
+getOctoprintVersion	KEYWORD2
+getPrintJob	KEYWORD2
+octoPrintGetPrinterBed	KEYWORD2
+sendPostToOctoPrint	KEYWORD2
+octoPrintConnectionDisconnect	KEYWORD2
+octoPrintConnectionAutoConnect	KEYWORD2
+octoPrintConnectionFakeAck	KEYWORD2
+octoPrintPrintHeadHome	KEYWORD2
+octoPrintPrintHeadRelativeJog	KEYWORD2
+octoPrintPrintHeadAbsoluteJog	KEYWORD2
+octoPrintPrintHeadJog	KEYWORD2
+octoPrintExtrude	KEYWORD2
+octoPrintSetBedTemperature	KEYWORD2
+octoPrintSetTool0Temperature	KEYWORD2
+octoPrintSetTool1Temperature	KEYWORD2
+octoPrintGetPrinterSD	KEYWORD2
+octoPrintPrinterSDInit	KEYWORD2
+octoPrintPrinterSDRefresh	KEYWORD2
+octoPrintPrinterSDRelease	KEYWORD2
+octoPrintJobStart	KEYWORD2
+octoPrintJobCancel	KEYWORD2
+octoPrintJobRestart	KEYWORD2
+octoPrintJobPauseResume	KEYWORD2
+octoPrintPrinterCommand	KEYWORD2
+octoPrintJobPause	KEYWORD2
+octoPrintJobResume	KEYWORD2
+octoPrintFileSelect	KEYWORD2
+octoPrintCoreShutdown	KEYWORD2
+octoPrintCoreReboot	KEYWORD2
+octoPrintCoreRestart	KEYWORD2
+init	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################

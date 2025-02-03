@@ -27,6 +27,7 @@ struct PrinterStatus {
 	int printDuration;
 	int total_layer;
 	int current_layer;
+	int filament_used;
 };
 
 class MainsailApi {

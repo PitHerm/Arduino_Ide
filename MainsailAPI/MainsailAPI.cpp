@@ -1,35 +1,5 @@
 /*
-
-  extended by Pit Hermann https://github.com/PitHerm
-  by adding the values of the DisplayLayerProgress plugin,
-  You need to have the plugin installed.
-  call: <your_api_name>.getdlp()
-  retrieved values:
-  String currentFilename;
-  String fanSpeed;
-  int feedrate;
-  int feedrateG0;
-  int feedrateG1;
-  double heightCurrent;
-  double heightCurrentFormatted;
-  double heightTotal;
-  double heightTotalFormatted;
-  String averageLayerDuration;
-  long int averageLayerDurationInSeconds;
-  int CurrentLayer;
-  String lastLayerDuration;
-  long int lastLayerDurationInSeconds;
-  int LayerTotal;
-  int changeFilamentCount;
-  String changeFilamentTimeLeft;
-  long int changeFilamentTimeLeftInSeconds;
-  String estimatedChangedFilamentTime;
-  String estimatedEndTime;
-  String m73progress;
-  String printerState;
-  int progress;
-  String timeLeft;
-  long int timeLeftInSeconds;
+  Mainsail basic api by Pit Hermann https://github.com/PitHerm
 */
 
 #include "MainsailAPI.h"
@@ -195,7 +165,7 @@ bool MainsailApi::getPrinterStatus() {
     P_Status.printDuration = doc["result"]["status"]["print_stats"]["print_duration"].as<String>().toInt();
     P_Status.total_layer = doc["result"]["status"]["print_stats"]["info"]["total_layer"].as<String>().toInt();
     P_Status.current_layer = doc["result"]["status"]["print_stats"]["info"]["current_layer"].as<String>().toInt();
-	
+	P_Status.filament_used = doc["result"]["status"]["print_stats"]["filament_used"].as<String>().toInt();
 	return true;
   }
   return false;
