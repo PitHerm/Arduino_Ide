@@ -32,7 +32,7 @@ This is simply the base Octoprint Api from chunkysteveo (https://github.com/chun
   long int timeLeftInSeconds
 
 
-You have to install DisplayLayerProgress Plugin to Octoprint.
+You need to install DisplayLayerProgress Plugin to Octoprint.
 call: <your_api_name>.getdlp()
 
 
@@ -94,13 +94,12 @@ Include OctoPrint API in your project:
     #include <OctoPrintAPI.h>
 
 
-## Examples
+## Example
 
 ### HelloWorldSerial
 This is the first sketch to try out. Enter your WiFi credentials, your OctoPrint network info, API key, compile and upload. Open the serial monitor and you should start to see printer information coming back. Works on both ESP8266 and ESP32 boards.
 
-### GetPrintJObInfo
-Uses the getPrintJob() function of the class to get the current print job and returns most of the useful API variables. Gives a "real world" example of using the variables to print more human readable info once collected from the API.
+
 
 
 ## Acknowledgments
