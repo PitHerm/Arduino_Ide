@@ -159,7 +159,7 @@ bool MainsailApi::getPrinterStatus() {
     P_Status.extruderTemp = doc["result"]["status"]["extruder"]["temperature"].as<String>().toFloat();
     P_Status.extruderTarget = doc["result"]["status"]["extruder"]["target"].as<String>().toFloat();
     P_Status.isActive = (doc["result"]["status"]["virtual_sdcard"]["is_active"] == true);
-    P_Status.progress = (doc["result"]["status"]["display_status"]["progress"].as<String>().toFloat())*100;                
+    P_Status.progress = (doc["result"]["status"]["virtual_sdcard"]["progress"].as<String>().toFloat())*100;                
     P_Status.state = doc["result"]["status"]["print_stats"]["state"].as<String>();
     P_Status.filename = doc["result"]["status"]["print_stats"]["filename"].as<String>();
     P_Status.printDuration = doc["result"]["status"]["print_stats"]["print_duration"].as<String>().toInt();
